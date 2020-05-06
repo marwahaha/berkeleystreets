@@ -5,17 +5,17 @@
 ### 1. Query for data
 I went to [this site](https://www.melissa.com/v2/lookups/addresssearch/?number=&street=&city=Berkeley&state=CA&zip=&fmt=json&id=) and copied the results to `data.json`.
 
-### Parse out street names
+### 2. Parse out street names
 ```
 jq '.[].StreetName' data.json  > streets.txt
 ```
 
+### 3. Separate streets by area of Berkeley
+```
+cp streets.txt streets-modified.txt
+```
 
----
-
-mark all streets by hand:
-
-see streets-modified.txt
+Then, I manually grouped all streets into different areas of Berkeley.
 
       3 m - marina
       7 u - unknown
@@ -28,10 +28,11 @@ see streets-modified.txt
     117 h - north hills
 
 
----
 ## Other ideas
 
 According to that site, there are 12 zip codes in berkeley:
 947(01-11) and 94720
 
 I tried querying by zip code, but after 94705, I ran out of "credits"... :-(
+
+This is in `zipcodedata/`.
