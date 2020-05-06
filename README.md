@@ -17,15 +17,34 @@ cp streets.txt streets-modified.txt
 
 Then, I manually grouped all streets into different areas of Berkeley.
 
-      3 m - marina
-      7 u - unknown
-     15 d - downtown
-     64 w - west berkeley
-     69 s - south of campus
-     77 c - campus
-     89 e - elmwood and south hills
-    110 n - north berkeley
-    117 h - north hills
+```
+> m=marina
+> u=unknown
+> nw=northwest berkeley
+> sw=southwest berkeley
+> d=downtown
+> w=west berkeley
+> so=south berkeley
+> c=campus
+> e=elmwood and south hills
+> no=north berkeley
+> h=north hills
+```
+
+```
+cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort -n
+      3 m
+      7 u
+     10 nw
+     15 d
+     27 sw
+     43 w
+     51 so
+     77 c
+     91 e
+    109 no
+    118 h
+```
 
 
 ## Other ideas
