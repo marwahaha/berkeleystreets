@@ -61,7 +61,8 @@ cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort
 
 
 ![Kunal's Map of Berkeley](map.png)
-Original photo from [City of Berkeley's GIS Portal](https://www.cityofberkeley.info/maproom/).
+
+Original photo from [City of Berkeley's GIS Portal](https://www.cityofberkeley.info/maproom/). Edited with [GIMP](https://www.gimp.org/).
 
 ### Unknown
 
