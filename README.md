@@ -1,9 +1,10 @@
-# Streets of Berkeley CA
+# Streets of Berkeley, CA
 
-What streets are in Berkeley? Have you seen them all?
+What are all in the streets in Berkeley? Where have I never been before?
 
 ## 1. Query for data
-I went to [this site](https://www.melissa.com/v2/lookups/addresssearch/?number=&street=&city=Berkeley&state=CA&zip=&fmt=json&id=) and copied the results to `data.json`.
+
+I went to [this site](https://www.melissa.com/v2/lookups/addresssearch/?number=&street=&city=Berkeley&state=CA&zip=&fmt=json&id=) to get all street names of Berkeley. I copied the results to `data.json`.
 
 ## 2. Parse out street names
 ```
@@ -15,7 +16,7 @@ jq '.[].StreetName' data.json  > streets.txt
 cp streets.txt streets-modified.txt
 ```
 
-Then, I manually grouped all streets into different areas of Berkeley.
+Then, I divided Berkeley into sections, based on my experience living here. I grouped all streets into different areas of Berkeley:
 
 ```
 > u=unknown
@@ -35,30 +36,36 @@ Then, I manually grouped all streets into different areas of Berkeley.
 > t=tilden park
 ```
 
+
+If I want to update the grouping, I run `./refresh.sh` to fix the downstream files.
+
 ```
 cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort -n
       3 ma
       6 u
-     12 p
-     14 nw
+     13 p
      15 d
+     15 nw
      27 sw
      34 mm
      36 ch
      42 w
      47 e
      51 so
-     52 cr
-     59 no
-     76 t
-     77 ca
+     54 cr
+     58 no
+     74 t
+     76 ca
 ```
 
 ```
 cat streets-modified.txt | sort > streets-sorted.txt
 ```
 
-## 4. Go through each section
+## 4. About each section of Berkeley
+
+
+![Kunal's Map of Berkeley](map.png)
 
 ### Unknown
 ```
@@ -198,3 +205,26 @@ There are many small parks and winding roads in this neighborhood. This mostly r
 Once I'm on a trail, I feel like I'm in another world. There's Lake Anza. The train exhibit has a replica steam train you can ride; it's also fun to watch. 
 
 Some of my favorite views are from the Lawrence Hall of Science, a children's museum. Once, I saw a raptor there; I think it was one of the [peregrine falcons that live on campus](https://calfalcons.berkeley.edu/).
+
+## 5. Mark the roads I've traveled on (by section)
+
+I'll skip the Unknown section.
+
+There are only a few names in the Campus section that are roads in Berkeley (Bancroft Steps, Campus Dr, Lower Sproul Breezeway, Sports Ln). I have traveled on all of them.
+
+I have been on every road in Downtown Berkeley and at the Marina.
+
+In the rest, I'm not sure if I've been on all listed roads. 
+
+## 6. Explore new streets in Berkeley!
+
+I'm keeping track of what I've definitely seen in `visited.txt`.
+
+Which roads have I not yet explored? Use this command:
+```
+comm -13 <(cat visited.txt | sort) streets-sorted.txt 
+```
+
+---
+
+*"The city, however, does not tell its past, but contains it like the lines of a hand, written in the corners of the streets, the gratings of the windows, the banisters of the steps, the antennae of the lightning roads, the poles of the flags, every segment marked in turn with scratches, indetations, scrolls."* - Italo Calvino, Invisible Cities 
