@@ -80,7 +80,7 @@ I didn't know that [MLK Jr Way used to be called Grove St](https://localwiki.org
 
 ### Marina
 
-These are the roads to [Adventure Playground](https://www.cityofberkeley.info/adventureplayground/), [César Chávez Park](https://www.cityofberkeley.info/ContentDisplay.aspx?id=56000), and the Berkeley Marina. When I was a child, my family took me to Adventure Playground on our trips to the Bay Area. As an adult, I have biked here many times. It makes you feel like you're on the edge of the world.
+These are the roads to [Adventure Playground](https://www.cityofberkeley.info/adventureplayground/), [César Chávez Park](https://www.cityofberkeley.info/ContentDisplay.aspx?id=56000), and the Berkeley Marina. When I was a child, my family took me to Adventure Playground on our trips to the Bay Area. As an adult, I have biked here many times. It makes me feel like I'm on the edge of the world.
 
 
 ### Southwest Berkeley
@@ -105,7 +105,7 @@ There are a lot of pretty roads in this area, like the tree-lined Alcatraz west 
 
 These roads are mostly residential, due east of the Claremont Hotel. The neighborhood is just below Grizzly Peak and the surrounding ridge, some of the highest points in Berkeley. 
 
-Riding through here is difficult, but if you can make it up here, you can go to [Redwood Regional Park](https://www.ebparks.org/parks/redwood/) in Oakland. Some bikers bike to Grizzly Peak from the north side of Berkeley, and zoom through this neighborhood on their way down.
+Riding through here is difficult, but if you can make it up here, head to [Redwood Regional Park](https://www.ebparks.org/parks/redwood/) in Oakland. Some bikers bike to Grizzly Peak from the north side of Berkeley, and zoom through this neighborhood on their way down.
 
 ### West and Central Berkeley
 
