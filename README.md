@@ -167,7 +167,7 @@ There are only a few names in the Campus section that are roads in Berkeley (Ban
 
 I have been on every road in Downtown Berkeley and at the Marina.
 
-In the rest, I'm not sure if I've been on all listed roads. 
+But I haven't visited them all!.
 
 ## 6. Explore new streets in Berkeley!
 
