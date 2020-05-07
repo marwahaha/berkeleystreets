@@ -45,13 +45,13 @@ cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort
      13 p
      15 d
      15 nw
-     27 sw
+     22 sw
      34 mm
      36 ch
      42 w
      47 e
-     51 so
      54 cr
+     56 so
      58 no
      74 t
      76 ca
@@ -61,6 +61,7 @@ cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort
 
 
 ![Kunal's Map of Berkeley](map.png)
+Original photo from [City of Berkeley's GIS Portal](https://www.cityofberkeley.info/maproom/).
 
 ### Unknown
 

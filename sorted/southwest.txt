@@ -1,8 +1,3 @@
-sw-"62Nd St"
-sw-"63Rd St"
-sw-"65Th St"
-sw-"66Th St"
-sw-"67Th St"
 sw-"Anthony St"
 sw-"Baker St"
 sw-"Boise St"
