@@ -1,5 +1,7 @@
 # Streets of Berkeley CA
 
+What streets are in Berkeley? Have you seen them all?
+
 ## 1. Query for data
 I went to [this site](https://www.melissa.com/v2/lookups/addresssearch/?number=&street=&city=Berkeley&state=CA&zip=&fmt=json&id=) and copied the results to `data.json`.
 
@@ -19,7 +21,7 @@ Then, I manually grouped all streets into different areas of Berkeley.
 > u=unknown
 > ca=campus
 > d=downtown
-> m=marina
+> ma=marina
 > sw=southwest berkeley
 > so=south berkeley
 > p=panoramic hill
@@ -27,7 +29,7 @@ Then, I manually grouped all streets into different areas of Berkeley.
 > ch=claremont hills
 > w=west and central berkeley
 > nw=northwest berkeley
-> m=monterey market
+> mm=monterey market
 > cr=cragmont and thousand oaks
 > no=north berkeley
 > t=tilden park
@@ -46,10 +48,10 @@ cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort
      42 w
      47 e
      51 so
-     53 cr
-     56 no
+     52 cr
+     59 no
+     76 t
      77 ca
-     78 t
 ```
 
 ```
@@ -57,7 +59,6 @@ cat streets-modified.txt | sort > streets-sorted.txt
 ```
 
 ## 4. Go through each section
-
 
 ### Unknown
 ```
@@ -104,7 +105,7 @@ I think of my favorite park, the wide and grassy [San Pablo Park](https://www.ci
 cat streets-sorted.txt | grep "^so-" > sorted/south.txt
 ```
 
-This is the home of the old Lorin district. I lived here in 2019-20. 
+This is home to the old Lorin district. I lived here in 2019-20. 
 
 I like [Sweet Adeline Bakeshop](http://sweetadelinebakeshop.com/). Sports Basement has an upright piano you can just go and play. I frequent a local [Thai temple's outdoor Sunday brunch](https://en.wikipedia.org/wiki/Wat_Mongkolratanaram). There's a [tool lending library](https://www.berkeleypubliclibrary.org/locations/tool-lending-library) and open basketball & tennis courts in the neighborhood. Ashby BART has a bazaar-style [flea market every weekend](http://www.berkeleyfleamarket.com/).
 
@@ -135,7 +136,7 @@ Riding through here is difficult, but if you can make it up here, you can go to 
 ```
 cat streets-sorted.txt | grep "^w-" > sorted/west.txt
 ```
-These are the streets surrounding University Avenue. There are wonderful bike lanes and parks, like California St, the [Ohlone Greenway](https://www.cityofberkeley.info/Parks_Rec_Waterfront/Trees_Parks/PARKS__OHLONE_PARK(1).aspx) and the Aquatic Park.
+These are the streets surrounding University Avenue. There are wonderful bike lanes and parks, like California St, the [Ohlone Greenway](https://www.cityofberkeley.info/Parks_Rec_Waterfront/Trees_Parks/PARKS__OHLONE_PARK(1).aspx), and the Aquatic Park.
 
 [Vik's Chaat](http://vikschaat.com/) is a longtime (since childhood) favorite restaurant. I also like Milan for Indian groceries.
 
@@ -152,7 +153,7 @@ cat streets-sorted.txt | grep "^nw-" > sorted/northwest.txt
 
 This area is close to Albany. Notable mentions in Albany: Happy Donuts on San Pablo and Ocean View Park.
 
-I've been meaning to see a show at [924 Gilman](https://en.wikipedia.org/wiki/924_Gilman_Street) or [Ashkenaz](https://www.ashkenaz.com/).
+I've been meaning to see a show at [924 Gilman](https://en.wikipedia.org/wiki/924_Gilman_Street) or [Ashkenaz](https://www.ashkenaz.com/). I peeked in 924 Gilman once; someone was covering [a SWMRS song](https://www.youtube.com/watch?v=hnPO3QzSbFo).
 
 ### Monterey Market
 ```
@@ -183,14 +184,22 @@ Because of the elevation, the views are spectacular from almost anywhere in this
 cat streets-sorted.txt | grep "^no-" > sorted/north.txt
 ```
 
-I think of north of campus, student co-ops, codornices park and live oak park, cheeseboard, the rose garden, the circle. I lived here in 2012-13 and again from 2014-16.
+Close to campus, students find housing in homes, apartments, and [co-ops](https://www.bsc.coop/). [Cheese Board Pizza and Bakery](https://cheeseboardcollective.coop/) is a famous spot, often with live jazz. The original Peet's Coffee is in this neighborhood.
+
+The parks are stunning: sit by the creek at Live Oak Park, go down the rock slide at Codornices, or get lost in the Rose Garden. I lived here in 2012-13 and again from 2014-16.
 
 ### Tilden Park
 ```
 cat streets-sorted.txt | grep "^t-" > sorted/tilden.txt
 ```
 
-Where the main entrance is, and the winding roads near it. Some of the highest points in Berkeley. The regional park is incredible -- once you enter, it feels like another world. There's a farm at the top. The train area is cool to watch. This borders the LBNL area.
+There are many small parks and winding roads in this neighborhood. This mostly residential area borders a jewel of Berkeley -- Tilden Park.
+
+Once I'm on a trail, I feel like I'm in another world. There's Lake Anza. The train exhibit has a replica steam train you can ride; it's also fun to watch. 
+
+Some of my favorite views are from the Lawrence Hall of Science, a children's museum. Once, I saw a raptor there; I think it was one of the [peregrine falcons that live on campus](https://calfalcons.berkeley.edu/).
+
+---
 
 ## Other ideas
 
