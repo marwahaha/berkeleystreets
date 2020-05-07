@@ -35,19 +35,19 @@ Then, I manually grouped all streets into different areas of Berkeley.
 
 ```
 cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort -n
-      1 Chancellor
+      3 ma
       6 u
      12 p
      14 nw
      15 d
      27 sw
-     34 ch
-     37 m
+     34 mm
+     36 ch
      42 w
      47 e
      51 so
      53 cr
-     57 no
+     56 no
      77 ca
      78 t
 ```
@@ -86,7 +86,7 @@ I didn't know that [MLK Jr Way used to be called Grove St](https://localwiki.org
 
 ### Marina
 ```
-cat streets-sorted.txt | grep "^m-" > sorted/marina.txt
+cat streets-sorted.txt | grep "^ma-" > sorted/marina.txt
 ```
 
 These are the roads to [Adventure Playground](https://www.cityofberkeley.info/adventureplayground/), [César Chávez Park](https://www.cityofberkeley.info/ContentDisplay.aspx?id=56000), and the Berkeley Marina. When I was a child, my family took me to Adventure Playground on our trips to the Bay Area. As an adult, I have biked here many times. It makes you feel like you're on the edge of the world.
@@ -156,7 +156,7 @@ I've been meaning to see a show at [924 Gilman](https://en.wikipedia.org/wiki/92
 
 ### Monterey Market
 ```
-cat streets-sorted.txt | grep "^m-" > sorted/montereymarket.txt
+cat streets-sorted.txt | grep "^mm-" > sorted/montereymarket.txt
 ```
 
 This is a cute and quiet area of town. There are rolling hills on the north side. I lived here in 2018. 
@@ -180,7 +180,7 @@ Because of the elevation, the views are spectacular from almost anywhere in this
 
 ### North Berkeley
 ```
-cat streets-sorted.txt | grep "^n-" > sorted/north.txt
+cat streets-sorted.txt | grep "^no-" > sorted/north.txt
 ```
 
 I think of north of campus, student co-ops, codornices park and live oak park, cheeseboard, the rose garden, the circle. I lived here in 2012-13 and again from 2014-16.
@@ -207,10 +207,3 @@ I tried a second time, and got to 94709...
 This is in `zipcodedata/`.
 
 ---
-
-Should probably split elmwood from claremont hills!
-
-NW berkeley, North berkeley, Hills?
-I probably need another grouping around Monterey Market?
-
-Should probablymake a Kensington-area one
