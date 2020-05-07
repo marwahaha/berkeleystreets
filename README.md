@@ -198,21 +198,3 @@ There are many small parks and winding roads in this neighborhood. This mostly r
 Once I'm on a trail, I feel like I'm in another world. There's Lake Anza. The train exhibit has a replica steam train you can ride; it's also fun to watch. 
 
 Some of my favorite views are from the Lawrence Hall of Science, a children's museum. Once, I saw a raptor there; I think it was one of the [peregrine falcons that live on campus](https://calfalcons.berkeley.edu/).
-
----
-
-## Other ideas
-
-According to that site, there are 12 zip codes in berkeley:
-947(01-11) and 94720
-
-https://www.zip-codes.com/city/ca-berkeley.asp
- - looks like 94701 and 94712 are PO boxes.
-
-I tried querying by zip code, but after 94705, I ran out of "credits"... :-(
-
-I tried a second time, and got to 94709...
-
-This is in `zipcodedata/`.
-
----
