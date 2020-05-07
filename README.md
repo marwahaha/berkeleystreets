@@ -46,6 +46,9 @@ cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort
     118 h
 ```
 
+```
+cat streets-modified.txt | sort > streets-sorted.txt
+```
 
 ## Other ideas
 
