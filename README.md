@@ -180,4 +180,4 @@ comm -13 <(cat visited.txt | sort) streets-sorted.txt
 
 ---
 
-*"The city, however, does not tell its past, but contains it like the lines of a hand, written in the corners of the streets, the gratings of the windows, the banisters of the steps, the antennae of the lightning roads, the poles of the flags, every segment marked in turn with scratches, indetations, scrolls."* - Italo Calvino, Invisible Cities 
+*"The city, however, does not tell its past, but contains it like the lines of a hand, written in the corners of the streets, the gratings of the windows, the banisters of the steps, the antennae of the lightning roads, the poles of the flags, every segment marked in turn with scratches, indentations, scrolls."* - Italo Calvino, Invisible Cities
