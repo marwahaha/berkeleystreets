@@ -173,7 +173,7 @@ cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort
 
 ## Where have I been so far?
 
-When I first made this list, I had traveled on all of the roads on campus that were actually roads (Bancroft Steps, Campus Dr, Lower Sproul Breezeway, Sports Ln). I had also been on every road in Downtown Berkeley and at the Marina. But I certainly hadn't visited them all.
+When I first made this list, I had traveled on all of the roads on campus, in Downtown Berkeley, and at the marina. But I certainly hadn't visited them all.
 
 I'm keeping track of what I've definitely seen in [`visited.txt`](https://raw.githubusercontent.com/marwahaha/berkeleystreets/master/visited.txt). I can see which streets I haven't yet visited with this command:
 
