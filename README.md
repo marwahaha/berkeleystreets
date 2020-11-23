@@ -181,7 +181,7 @@ I'm keeping track of what I've definitely seen in [`visited.txt`](https://raw.gi
 comm -13 <(cat visited.txt | sort) streets-sorted.txt
 ```
 
-As of November 2020, I've visited 225 of Berkeley's 551 streets.
+As of November 2020, I've visited 229 of Berkeley's 551 streets.
 
 ---
 
