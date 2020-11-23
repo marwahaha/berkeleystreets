@@ -1,76 +1,21 @@
-# Streets of Berkeley, CA
+As of 2020, I've lived in Berkeley for seven years. I made this to honor the beautiful place I call home.
 
-What are all in the streets in Berkeley? Where have I never been before?
+I recently found a list of every street in Berkeley. I carefully read each one, seeing if I could place it on a map. It was much harder than I expected!
 
-## 1. Query for data
+Before I leave, I'd like to visit every street in Berkeley. I first divided every street into a different "section" of Berkeley. Then I'm keeping [a list of streets](https://raw.githubusercontent.com/marwahaha/berkeleystreets/master/visited.txt) I have visited on foot or on bike.
 
-I went to [this site](https://www.melissa.com/v2/lookups/addresssearch/?number=&street=&city=Berkeley&state=CA&zip=&fmt=json&id=) to get all street names of Berkeley. I copied the results to `data.json`.
+Of course, this is one of many ways to capture a city's multitudes. Firstly, Berkeley is a place where people live together. The streets are only shadows of real human stories.
 
-## 2. Parse out street names
-```
-jq '.[].StreetName' data.json  > streets.txt
-```
-
-## 3. Separate streets by area of Berkeley
-```
-cp streets.txt streets-modified.txt
-```
-
-Then, I divided Berkeley into sections, based on my experience living here. I grouped all streets into different areas of Berkeley:
-
-```
-> u=unknown
-> ca=campus
-> d=downtown
-> ma=marina
-> sw=southwest berkeley
-> so=south berkeley
-> p=panoramic hill
-> e=elmwood
-> ch=claremont hills
-> w=west and central berkeley
-> nw=northwest berkeley
-> mm=monterey market
-> cr=cragmont and thousand oaks
-> no=north berkeley
-> t=tilden park
-```
-
-If I want to update the grouping, I run `./refresh.sh` to fix the downstream files.
-
-```
-cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort -n
-      3 ma
-      6 u
-     13 p
-     15 d
-     15 nw
-     22 sw
-     34 mm
-     36 ch
-     42 w
-     47 e
-     54 cr
-     56 so
-     58 no
-     74 t
-     76 ca
-```
-
-## 4. About each section of Berkeley
+## My map of Berkeley
 
 
 ![Kunal's Map of Berkeley](map.png)
 
 Original photo from [City of Berkeley's GIS Portal](https://www.cityofberkeley.info/maproom/). Edited with [GIMP](https://www.gimp.org/).
 
-### Unknown
-
-These were places I didn't recognize. I think they do not refer to streets. "Station" might refer to the Amtrak or BART stations. South Anx could be a building on campus. Oakland is a reference to Oakland, CA.
-
 ### Campus
 
-Many places are building names on campus. As a college student, I visited most of this list.
+Many street names are actually building names on campus. As a college student, I visited most of this list.
 
 A few names were new to me (like A E Bldg). I didn't know about the Animal Facility on campus (and [I'm not alone](https://talk.collegeconfidential.com/university-california-berkeley/1623981-northwest-animal-facility-the-most-secretive-building-at-cal.html))! The Richmond Field Station addresses are actually in Richmond, but UC Berkeley owns the property.
 
@@ -91,7 +36,7 @@ I think of my favorite park, the wide and grassy [San Pablo Park](https://www.ci
 
 ### South Berkeley
 
-This is home to the old Lorin district. I lived here in 2019-20. 
+This is home to the old Lorin district. I lived here in 2019-20.
 
 I like [Sweet Adeline Bakeshop](http://sweetadelinebakeshop.com/). Sports Basement has an upright piano you can just go and play. I frequent a local [Thai temple's outdoor Sunday brunch](https://en.wikipedia.org/wiki/Wat_Mongkolratanaram). There's a [tool lending library](https://www.berkeleypubliclibrary.org/locations/tool-lending-library) and open basketball & tennis courts in the neighborhood. Ashby BART has a bazaar-style [flea market every weekend](http://www.berkeleyfleamarket.com/).
 
@@ -105,13 +50,13 @@ There are a lot of pretty roads in this area, like the tree-lined Alcatraz west 
 
 ### Claremont Hills
 
-These roads are mostly residential, due east of the Claremont Hotel. The neighborhood is just below Grizzly Peak and the surrounding ridge, some of the highest points in Berkeley. 
+These roads are mostly residential, due east of the Claremont Hotel. The neighborhood is just below Grizzly Peak and the surrounding ridge, some of the highest points in Berkeley.
 
 Riding through here is difficult, but if you can make it up here, head to [Redwood Regional Park](https://www.ebparks.org/parks/redwood/) in Oakland. Some bikers bike to Grizzly Peak from the north side of Berkeley, and zoom through this neighborhood on their way down.
 
 ### West and Central Berkeley
 
-These are the streets surrounding University Avenue. There are wonderful bike lanes and parks, like California St, the [Ohlone Greenway](https://www.cityofberkeley.info/Parks_Rec_Waterfront/Trees_Parks/PARKS__OHLONE_PARK(1).aspx), and the Aquatic Park.
+These are the streets surrounding University Avenue. There are wonderful bike lanes and parks, like California St, the [Ohlone Greenway](https://www.cityofberkeley.info/Parks_Rec_Waterfront/Trees_Parks/PARKS__OHLONE_PARK(1).aspx), and the Aquatic Park. I lived here in 2020-21.
 
 [Vik's Chaat](http://vikschaat.com/) is a longtime (since childhood) favorite restaurant. I also like Milan for Indian groceries.
 
@@ -119,7 +64,7 @@ Fosters Freeze is a guilty pleasure of mine.
 
 My friend worked at Mi Tierra Foods (grocery and prepared foods) in 2020; I'd visit him often. He'd buy burritos with an employee discount and we'd walk to Strawberry Creek Park or James Kenney Park to eat them.
 
-I love the quiet and calm beauty of the small streets east of Sacramento St (Spaulding, Jefferson, Roosevelt, McKinley). 
+I love the quiet and calm beauty of the small streets east of Sacramento St (Spaulding, Jefferson, Roosevelt, McKinley).
 
 ### Northwest Berkeley
 
@@ -129,7 +74,7 @@ I've been meaning to see a show at [924 Gilman](https://en.wikipedia.org/wiki/92
 
 ### Monterey Market
 
-This is a cute and quiet area of town. There are rolling hills on the north side. I lived here in 2018. 
+This is a cute and quiet area of town. There are rolling hills on the north side. I lived here in 2018.
 
 I like Cedar Rose Park. King Middle School's garden, track, and basketball courts are open to the public outside of school hours.
 
@@ -155,28 +100,88 @@ The parks are stunning: sit by the creek at Live Oak Park, go down the rock slid
 
 There are many small parks and winding roads in this neighborhood. This mostly residential area borders a jewel of Berkeley -- Tilden Park.
 
-Once I'm on a trail, I feel like I'm in another world. There's Lake Anza. The train exhibit has a replica steam train you can ride; it's also fun to watch. 
+Once I'm on a trail, I feel like I'm in another world. There's Lake Anza. The train exhibit has a replica steam train you can ride; it's also fun to watch.
 
 Some of my favorite views are from the Lawrence Hall of Science, a children's museum. Once, I saw a raptor there; I think it was one of the [peregrine falcons that live on campus](https://calfalcons.berkeley.edu/).
 
-## 5. Mark the roads I've traveled on (by section)
+### Unknown
 
-I'll skip the Unknown section.
+I didn't recognize a few names of my Berkeley street list. I think they do not refer to streets. "Station" might refer to the Amtrak or BART stations. South Anx could be a building on campus. Oakland is a reference to Oakland, CA.
 
-There are only a few names in the Campus section that are roads in Berkeley (Bancroft Steps, Campus Dr, Lower Sproul Breezeway, Sports Ln). I have traveled on all of them.
 
-I have been on every road in Downtown Berkeley and at the Marina.
 
-But I haven't visited them all.
+## How I got the data
 
-## 6. Explore new streets in Berkeley!
+I first went to [this site](https://www.melissa.com/v2/lookups/addresssearch/?number=&street=&city=Berkeley&state=CA&zip=&fmt=json&id=) to get all street names of Berkeley. I copied the results to `data.json`.
 
-I'm keeping track of what I've definitely seen in `visited.txt`.
+Then I parsed out the street names with this command:
 
-Which roads have I not yet explored? Use this command:
 ```
-comm -13 <(cat visited.txt | sort) streets-sorted.txt 
+jq '.[].StreetName' data.json  > streets.txt
 ```
+
+I copied the list of streets into a new file that I will modify:
+
+```
+cp streets.txt streets-modified.txt
+```
+
+Then, I divided Berkeley into sections, based on my experience living here. I grouped all streets into different areas of Berkeley:
+
+```
+> u=unknown
+> ca=campus
+> d=downtown
+> ma=marina
+> sw=southwest berkeley
+> so=south berkeley
+> p=panoramic hill
+> e=elmwood
+> ch=claremont hills
+> w=west and central berkeley
+> nw=northwest berkeley
+> mm=monterey market
+> cr=cragmont and thousand oaks
+> no=north berkeley
+> t=tilden park
+```
+
+I wrote a [simple program](https://raw.githubusercontent.com/marwahaha/berkeleystreets/master/refresh.sh) that used this grouping to generate a list of roads [for each section of Berkeley](https://github.com/marwahaha/berkeleystreets/tree/master/sorted).
+
+Some sections of Berkeley have many more streets than others.
+
+```
+cat streets-modified.txt | cut -d '-' -f1 | grep -v '"' | sort | uniq -c  | sort -n
+      3 ma
+      6 u
+     13 p
+     15 d
+     15 nw
+     22 sw
+     34 mm
+     36 ch
+     42 w
+     47 e
+     54 cr
+     56 so
+     58 no
+     74 t
+     76 ca
+```
+
+
+
+## Where have I been so far?
+
+When I first made this list, I had traveled on all of the roads on campus that were actually roads (Bancroft Steps, Campus Dr, Lower Sproul Breezeway, Sports Ln). I had also been on every road in Downtown Berkeley and at the Marina. But I certainly hadn't visited them all.
+
+I'm keeping track of what I've definitely seen in [`visited.txt`](https://raw.githubusercontent.com/marwahaha/berkeleystreets/master/visited.txt). I can see which streets I haven't yet visited with this command:
+
+```
+comm -13 <(cat visited.txt | sort) streets-sorted.txt
+```
+
+As of November 2020, I've visited 225 of Berkeley's 551 streets.
 
 ---
 
