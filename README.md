@@ -32,7 +32,7 @@ These are the roads to [Adventure Playground](https://www.cityofberkeley.info/ad
 
 ### Southwest Berkeley
 
-I think of my favorite park, the wide and grassy [San Pablo Park](https://www.cityofberkeley.info/Parks_Rec_Waterfront/Trees_Parks/Parks__San_Pablo_Park.aspx). I have shopped at Berkeley Bowl West several times, sometimes just for a handful of chocolate chips. [Missouri Lounge](https://www.missouriloungebar.com/) is a cool place to hang out: half biergarten and half dive bar. The [Tssui Fish House](https://www.berkeleyside.com/2015/11/30/how-quirky-is-berkeley-eugene-tssuis-fish-house-part-1) is nearby, and [Urban Ore](https://www.urbanore.com/) is a quirky warehouse full of secondhand items.
+I think of my favorite park, the wide and grassy [San Pablo Park](https://www.cityofberkeley.info/Parks_Rec_Waterfront/Trees_Parks/Parks__San_Pablo_Park.aspx). I have shopped at Berkeley Bowl West several times, sometimes just for a handful of chocolate chips. [Missouri Lounge](https://www.missouriloungebar.com/) is a cool place to hang out: half biergarten and half dive bar. The [Tssui Fish House](https://www.berkeleyside.com/2015/11/30/how-quirky-is-berkeley-eugene-tssuis-fish-house-part-1) is nearby, and [Urban Ore](https://www.urbanore.com/) is a quirky warehouse full of secondhand items. And the best food in Berkeley gets made here, [by the one and only Chef Elmy](https://www.yelp.com/biz/royal-egyptian-cuisine-berkeley).
 
 ### South Berkeley
 
