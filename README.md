@@ -70,7 +70,7 @@ I love the quiet and calm beauty of the small streets east of Sacramento St (Spa
 
 This area is close to Albany. Notable mentions in Albany: Happy Donuts on San Pablo and Ocean View Park.
 
-I've been meaning to see a show at [924 Gilman](https://en.wikipedia.org/wiki/924_Gilman_Street) or [Ashkenaz](https://www.ashkenaz.com/). I peeked in 924 Gilman once; someone was covering [a SWMRS song](https://www.youtube.com/watch?v=hnPO3QzSbFo).
+I've been meaning to see a show at [924 Gilman](https://en.wikipedia.org/wiki/924_Gilman_Street) or [Ashkenaz](https://www.ashkenaz.com/). I peeked in 924 Gilman once; someone was covering [a SWMRS song](https://www.youtube.com/watch?v=VjZUARQ1Hko).
 
 ### Monterey Market
 
