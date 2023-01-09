@@ -17,7 +17,7 @@ Original photo from [City of Berkeley's GIS Portal](https://www.cityofberkeley.i
 
 Many street names are actually building names on campus. As a college student, I visited most of this list.
 
-A few names were new to me (like A E Bldg). I didn't know about the Animal Facility on campus (and [I'm not alone](https://talk.collegeconfidential.com/university-california-berkeley/1623981-northwest-animal-facility-the-most-secretive-building-at-cal.html))! The Richmond Field Station addresses are actually in Richmond, but UC Berkeley owns the property.
+A few names were new to me (like A E Bldg). I didn't know about the Animal Facility on campus (and [I'm not alone](https://web.archive.org/web/20170410045436/http://talk.collegeconfidential.com:80/university-california-berkeley/1623981-northwest-animal-facility-the-most-secretive-building-at-cal.html))! The Richmond Field Station addresses are actually in Richmond, but UC Berkeley owns the property.
 
 ### Downtown
 
